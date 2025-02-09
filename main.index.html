@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="main.style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the ⚡The TechVibe</h1>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search products...">
+    </div>
+  </header>
+
+  <div class="categories">
+    <div id="gadgets-list" class="category-list"></div>
+    <div id="computers-list" class="category-list"></div>
+    <div id="smartphones-list" class="category-list"></div>
+    <div id="wearables-list" class="category-list"></div>
+    <div id="accessories-list" class="category-list"></div>
+  </div>
+
+  <!-- Modal for product details -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <img id="modal-image" src="" alt="Product Image">
+      <h3 id="modal-name"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="main.script.js"></script>
+</body>
+</html>

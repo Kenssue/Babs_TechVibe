@@ -1,0 +1,209 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8e3d3; /* Light Sand background */
+  color: #4a4a4a; /* Dark Gray text */
+}
+
+header {
+  background-color: #2a3d4f; /* Dark Slate Blue for header */
+  color: #f0d29e; /* Light Gold text */
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f0d29e;
+  text-transform: uppercase;
+}
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input {
+  padding: 14px 24px;
+  width: 75%;
+  max-width: 650px;
+  border-radius: 30px;
+  border: 2px solid #2a3d4f; /* Dark Slate Blue border */
+  font-size: 1.1rem;
+  background-color: #f4e4c1; /* Soft Ivory input background */
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #d7af68; /* Warm Golden focus effect */
+  outline: none;
+  box-shadow: 0 0 8px rgba(215, 175, 104, 0.4);
+  background-color: #f1e1a1; /* Slightly darker Ivory on focus */
+}
+
+/* Category and Product list */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* Category Item Styles */
+.category-item {
+  background-color: #b1a79b; /* Light Taupe for category background */
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid #9f9482; /* Muted Olive border */
+}
+
+.category-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+  background-color: #c0a28b; /* Slightly warmer taupe on hover */
+}
+
+.category-item h3 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #2a3d4f; /* Dark Slate Blue for category headings */
+}
+
+/* Product Item Styles */
+.product-item {
+  background-color: #d3c7a1; /* Light Olive Beige for product items */
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid #b0a488; /* Olive Beige border */
+}
+
+.product-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+  background-color: #c1b18a; /* Slightly darker beige on hover */
+}
+
+.product-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #2a3d4f; /* Dark Slate Blue for headings */
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #5c5c5c; /* Dark Gray text for descriptions */
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #f1e1a1; /* Soft Golden background for modal */
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 750px;
+  width: 90%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.modal-content h3 {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  font-weight: 600;
+  color: #2a3d4f; /* Dark Slate Blue heading */
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  color: #5c5c5c;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: #4a4a4a; /* Dark Gray for close button */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #d7af68; /* Warm Golden close button */
+}
+
+/* Button Styles */
+button {
+  background-color: #d7af68; /* Warm Golden button */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d69d4f; /* Slightly darker gold for hover */
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(215, 175, 104, 0.5);
+}
