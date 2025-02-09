@@ -207,3 +207,86 @@ button:focus {
   outline: none;
   box-shadow: 0 0 12px rgba(215, 175, 104, 0.5);
 }
+
+/* Responsive Design for all devices */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-container input {
+    width: 85%;
+    font-size: 1rem;
+  }
+
+  .category-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-item {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .product-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .search-container input {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .category-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .product-item {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+
+  .product-item img {
+    height: 180px;
+  }
+
+  .modal-content {
+    padding: 30px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-container input {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-item {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .product-item img {
+    height: 150px;
+  }
+
+  .modal-content {
+    padding: 20px;
+    width: 90%;
+  }
+}
