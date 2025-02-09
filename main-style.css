@@ -19,6 +19,8 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+    width: 500px;
 }
 
 h1 {
@@ -48,4 +50,37 @@ button:hover {
     background: linear-gradient(135deg, #a75925, #4a504b);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 30px;
+        width: 80%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
 }
